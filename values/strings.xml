@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PicLoader</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="smooch">ea4mjfqcdr2g8bcam3ze3fdoe</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_main">ChatMe</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_chat_interface">ChatInterface</string>
+
+    <string name="me">Me</string>
+    <string name="groups">Groups</string>
+    <string name="members">Members</string>
+    <string name="group_messages">Group Messages</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="remove_grp_confirmed">Remove Group</string>
+    <string name="title_activity_group_chat">GroupChat</string>
+</resources>

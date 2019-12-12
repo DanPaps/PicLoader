@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="5dp"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/blog_sender_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/prof_2"
+                app:civ_border_width="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                app:civ_border_color="#00FFFFFF"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/blogMenu"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginRight="7dp"/>
+
+            <TextView
+                android:id="@+id/blog_user_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingEnd="1dp"
+                android:paddingStart="1dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/black"
+                android:text="username"
+                android:textStyle="italic|bold"
+                android:layout_alignTop="@+id/blog_sender_profile"
+                android:layout_toEndOf="@+id/blog_sender_profile" />
+            <TextView
+                android:id="@+id/blog_email_blog"
+                android:layout_below="@+id/blog_user_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingEnd="1dp"
+                android:paddingStart="1dp"
+                android:paddingTop="1dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/black"
+                android:text="Email"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/blog_sender_profile"
+                android:layout_toEndOf="@+id/blog_sender_profile" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/blog_desc_blog2"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:maxEms="1"
+                android:text="Description"
+                android:layout_marginTop="6dp"
+                android:textStyle="italic"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/blog_image_home"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_hdr_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/blog_desc_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:maxEms="1"
+            android:text="Description"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/comment_blog"
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@+id/like"
+                android:layout_height="wrap_content"
+                android:src='@drawable/ic_comment_black_24dp'
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+
+                android:contentDescription="@string/app_name"
+                android:tint="@android:color/black"/>
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:src='@drawable/ic_favorite_black_24dp'
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/app_name"
+
+
+                />
+            <ImageView
+                android:id="@+id/unlike"
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:src='@drawable/ic_favorite_border_black_24dp'
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/app_name"
+
+                />
+            <ImageView
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/comment_blog"
+                android:src='@drawable/ic_near_me_black_24dp'
+                android:layout_marginTop="16dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/app_name"
+                android:tint="@android:color/black"
+                />
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:src='@drawable/ic_bookmark_border_black_24dp'
+                android:layout_marginTop="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/app_name"
+                android:tint="@android:color/black"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

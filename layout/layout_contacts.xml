@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_contacts"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/_profile_contact"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/nobody"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:civ_border_width="2dp"
+        android:layout_alignParentTop="true"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_fill_color="@color/cardview_dark_background"
+        app:civ_border_overlay="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_toEndOf="@+id/_profile_contact"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/_contact_add"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/_name_contact"
+            android:text="username"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/_status_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:maxLines="1"
+            android:ems="10"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/_contact_add"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:tint="@color/colorPrimary"
+        android:contentDescription="contacts"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

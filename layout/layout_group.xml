@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/_grp_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/business"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:contentDescription="groups" />
+
+        <TextView
+            android:id="@+id/_grp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="groups"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/_grp_icon"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/_grp_admin"
+            android:text="admin"
+            android:layout_below="@+id/_grp_name"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/_grp_member"
+            android:text="admin"
+            android:layout_below="@+id/_grp_admin"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/_grp_gid"
+            android:text="admin"
+            android:layout_below="@+id/_grp_member"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/_grp_date"
+            android:text="time"
+            android:layout_below="@+id/_grp_gid"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
